@@ -1,0 +1,140 @@
+2024-09-01 20:21:52.370 | INFO     | model.pipeline.data_setup:download_data:42 - data/pizza_steak_sushi directory exists, skipping download.
+2024-09-01 20:21:52.370 | INFO     | __main__:main:38 - Manually created transforms: Compose(
+    Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)
+    ToTensor()
+)
+2024-09-01 20:21:52.371 | INFO     | __main__:main:46 - Data Preparation with transforms: [<torch.utils.data.dataloader.DataLoader object at 0x7fe8b539e550>, <torch.utils.data.dataloader.DataLoader object at 0x7fe8b56cbf90>, ['pizza', 'steak', 'sushi']]
+2024-09-01 20:21:53.001 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:21:53.173 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:21:53.175 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:21:53.176 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([32, 196, 768])
+2024-09-01 20:21:53.191 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([32, 197, 768])
+2024-09-01 20:21:53.198 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([32, 197, 768])
+2024-09-01 20:22:01.230 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([32, 197, 768])
+2024-09-01 20:22:01.236 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([32, 3])
+2024-09-01 20:22:01.863 | INFO     | model.pipeline.engine:train_step:45 - Entering Batch 0
+2024-09-01 20:22:01.865 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:22:01.976 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:22:01.976 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:22:01.977 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([32, 196, 768])
+2024-09-01 20:22:01.999 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([32, 197, 768])
+2024-09-01 20:22:02.003 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([32, 197, 768])
+2024-09-01 20:22:11.244 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([32, 197, 768])
+2024-09-01 20:22:11.245 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([32, 3])
+2024-09-01 20:22:11.250 | INFO     | model.pipeline.engine:train_step:55 - The Loss: 1.1453601121902466
+2024-09-01 20:22:28.708 | INFO     | model.pipeline.engine:train_step:67 - The prediction for 0 Batch: tensor([2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 1, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 0])
+2024-09-01 20:22:28.714 | INFO     | model.pipeline.engine:train_step:45 - Entering Batch 1
+2024-09-01 20:22:28.714 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:22:28.773 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:22:28.774 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:22:28.775 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([32, 196, 768])
+2024-09-01 20:22:28.779 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([32, 197, 768])
+2024-09-01 20:22:28.785 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([32, 197, 768])
+2024-09-01 20:22:39.754 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([32, 197, 768])
+2024-09-01 20:22:39.755 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([32, 3])
+2024-09-01 20:22:39.758 | INFO     | model.pipeline.engine:train_step:55 - The Loss: 5.954971790313721
+2024-09-01 20:22:55.956 | INFO     | model.pipeline.engine:train_step:67 - The prediction for 1 Batch: tensor([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1])
+2024-09-01 20:22:55.961 | INFO     | model.pipeline.engine:train_step:45 - Entering Batch 2
+2024-09-01 20:22:55.962 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:22:56.029 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:22:56.029 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:22:56.031 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([32, 196, 768])
+2024-09-01 20:22:56.035 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([32, 197, 768])
+2024-09-01 20:22:56.043 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([32, 197, 768])
+2024-09-01 20:23:06.380 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([32, 197, 768])
+2024-09-01 20:23:06.381 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([32, 3])
+2024-09-01 20:23:06.382 | INFO     | model.pipeline.engine:train_step:55 - The Loss: 11.459070205688477
+2024-09-01 20:23:22.869 | INFO     | model.pipeline.engine:train_step:67 - The prediction for 2 Batch: tensor([2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2])
+2024-09-01 20:23:22.874 | INFO     | model.pipeline.engine:train_step:45 - Entering Batch 3
+2024-09-01 20:23:22.874 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:23:22.934 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:23:22.935 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:23:22.935 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([32, 196, 768])
+2024-09-01 20:23:22.940 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([32, 197, 768])
+2024-09-01 20:23:22.943 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([32, 197, 768])
+2024-09-01 20:23:33.013 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([32, 197, 768])
+2024-09-01 20:23:33.015 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([32, 3])
+2024-09-01 20:23:33.017 | INFO     | model.pipeline.engine:train_step:55 - The Loss: 11.561868667602539
+2024-09-01 20:23:50.083 | INFO     | model.pipeline.engine:train_step:67 - The prediction for 3 Batch: tensor([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1])
+2024-09-01 20:23:50.089 | INFO     | model.pipeline.engine:train_step:45 - Entering Batch 4
+2024-09-01 20:23:50.090 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:23:50.147 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:23:50.148 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:23:50.149 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([32, 196, 768])
+2024-09-01 20:23:50.153 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([32, 197, 768])
+2024-09-01 20:23:50.155 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([32, 197, 768])
+2024-09-01 20:24:00.259 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([32, 197, 768])
+2024-09-01 20:24:00.260 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([32, 3])
+2024-09-01 20:24:00.261 | INFO     | model.pipeline.engine:train_step:55 - The Loss: 8.508845329284668
+2024-09-01 20:24:16.770 | INFO     | model.pipeline.engine:train_step:67 - The prediction for 4 Batch: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0])
+2024-09-01 20:24:16.774 | INFO     | model.pipeline.engine:train_step:45 - Entering Batch 5
+2024-09-01 20:24:16.775 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:24:16.837 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:24:16.837 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:24:16.838 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([32, 196, 768])
+2024-09-01 20:24:16.841 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([32, 197, 768])
+2024-09-01 20:24:16.844 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([32, 197, 768])
+2024-09-01 20:24:26.145 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([32, 197, 768])
+2024-09-01 20:24:26.146 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([32, 3])
+2024-09-01 20:24:26.148 | INFO     | model.pipeline.engine:train_step:55 - The Loss: 7.138957977294922
+2024-09-01 20:24:43.339 | INFO     | model.pipeline.engine:train_step:67 - The prediction for 5 Batch: tensor([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1])
+2024-09-01 20:24:43.344 | INFO     | model.pipeline.engine:train_step:45 - Entering Batch 6
+2024-09-01 20:24:43.344 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:24:43.406 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:24:43.407 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:24:43.408 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([32, 196, 768])
+2024-09-01 20:24:43.412 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([32, 197, 768])
+2024-09-01 20:24:43.416 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([32, 197, 768])
+2024-09-01 20:24:52.588 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([32, 197, 768])
+2024-09-01 20:24:52.589 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([32, 3])
+2024-09-01 20:24:52.590 | INFO     | model.pipeline.engine:train_step:55 - The Loss: 4.849579334259033
+2024-09-01 20:25:09.539 | INFO     | model.pipeline.engine:train_step:67 - The prediction for 6 Batch: tensor([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1])
+2024-09-01 20:25:09.543 | INFO     | model.pipeline.engine:train_step:45 - Entering Batch 7
+2024-09-01 20:25:09.544 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:25:09.549 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([1, 3, 224, 224])
+2024-09-01 20:25:09.550 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([1, 3, 224, 224])
+2024-09-01 20:25:09.550 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([1, 196, 768])
+2024-09-01 20:25:09.551 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([1, 197, 768])
+2024-09-01 20:25:09.552 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([1, 197, 768])
+2024-09-01 20:25:09.913 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([1, 197, 768])
+2024-09-01 20:25:09.914 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([1, 3])
+2024-09-01 20:25:09.915 | INFO     | model.pipeline.engine:train_step:55 - The Loss: 1.6420786380767822
+2024-09-01 20:25:10.771 | INFO     | model.pipeline.engine:train_step:67 - The prediction for 7 Batch: tensor([0])
+2024-09-01 20:25:11.440 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:25:11.565 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:25:11.566 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:25:11.566 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([32, 196, 768])
+2024-09-01 20:25:11.574 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([32, 197, 768])
+2024-09-01 20:25:11.579 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([32, 197, 768])
+2024-09-01 20:25:19.803 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([32, 197, 768])
+2024-09-01 20:25:19.804 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([32, 3])
+2024-09-01 20:25:19.811 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:25:19.862 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:25:19.863 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:25:19.863 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([32, 196, 768])
+2024-09-01 20:25:19.867 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([32, 197, 768])
+2024-09-01 20:25:19.870 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([32, 197, 768])
+2024-09-01 20:25:28.274 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([32, 197, 768])
+2024-09-01 20:25:28.276 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([32, 3])
+2024-09-01 20:25:28.281 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:25:28.321 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([11, 3, 224, 224])
+2024-09-01 20:25:28.322 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([11, 3, 224, 224])
+2024-09-01 20:25:28.322 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([11, 196, 768])
+2024-09-01 20:25:28.324 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([11, 197, 768])
+2024-09-01 20:25:28.326 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([11, 197, 768])
+2024-09-01 20:25:31.536 | INFO     | model.pipeline.vit:forward:192 - Output Shape from Tranformer Encoder: torch.Size([11, 197, 768])
+2024-09-01 20:25:31.537 | INFO     | model.pipeline.vit:forward:195 - Ouput Shape from Classifier: torch.Size([11, 3])
+2024-09-01 20:25:32.678 | INFO     | model.pipeline.engine:train_step:45 - Entering Batch 0
+2024-09-01 20:25:32.690 | WARNING  | model.pipeline.vit:forward:45 - Entering PatchEmbedding
+2024-09-01 20:25:32.835 | INFO     | model.pipeline.vit:forward:53 - Conv2D Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:25:32.836 | INFO     | model.pipeline.vit:forward:55 - Flattened Output: torch.Size([32, 3, 224, 224])
+2024-09-01 20:25:32.837 | INFO     | model.pipeline.vit:forward:179 - Patching embedding shape: torch.Size([32, 196, 768])
+2024-09-01 20:25:32.843 | INFO     | model.pipeline.vit:forward:183 - Patch embedding with class token shape: torch.Size([32, 197, 768])
+2024-09-01 20:25:32.846 | INFO     | model.pipeline.vit:forward:187 - Patch and position embedding shape: torch.Size([32, 197, 768])
